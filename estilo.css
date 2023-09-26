@@ -1,0 +1,198 @@
+:root {
+    --primary-color: orangered;
+    --secondary-color: rgba(49, 29, 3, 0.8);
+    --gray-color: #ccc;
+    --light-color: white;
+}
+
+html {
+    background-color: var(--light-color);
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.banner {
+    background-image: url(imagens/bg_paraiso.jpg);
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+}
+
+.top-header {
+    background-color: rgb(3, 11, 82);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    position: fixed;
+}
+
+ul {
+    display: flex;
+    gap: 1.2em;
+}
+
+.top-header h1 {
+    margin-left: 5em;
+    font-size: 2rem;
+}
+
+.top-header__list li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-header__list a:hover {
+    color: var(--gray-color);
+}
+
+.top-header__list a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.first-container {
+    background-color: white;
+}
+
+.second_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(82, 81, 83, 0.2);
+    padding-top: 4.5em;
+}
+
+.first-container p {
+    font-size: 0.8em;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    padding-bottom: 1em;
+}
+
+.container_pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    gap: 2em;
+}
+
+.container-content__1 {
+    margin-bottom: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 5em 10em 2em;
+    box-sizing: border-box;
+}
+
+.destiny {
+    background-color: rgba(242, 242, 245, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18em;
+    margin-right: 2.5em;
+}
+
+.destiny_pic {
+    width: 100%;
+    height: 50%;
+}
+
+.destiny img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.destiny_content {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4em;
+}
+
+.destiny_content p {
+    color: #23252D;
+}
+
+.contact {
+    background-color: white;
+    width: 100vw;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.contact h2{
+    padding-top: 3em;
+}
+
+footer {
+    background-color: #0b171f;
+    text-align: center;
+    color: #6f8597;
+    letter-spacing: 1ch;
+    width: 100vw;
+    font-size: 0.5em;
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+input,
+label,
+textarea,
+select {
+    display: inline-block;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select {
+    background-color: var(--gray-color);
+    border: 0;
+    margin-bottom: 1.6rem;
+    border-radius: 5px;
+    padding: 1.2rem;
+}
+
+.btn {
+    background-color: #2e2d2d;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid var(--gray-color);
+    padding: 0.8em 1em;
+    border-radius: 5px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(3, 11, 82);
+}
+
+label{
+    text-align: left;
+    padding-bottom: .5em;
+}
